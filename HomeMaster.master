@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMaster.master.cs" Inherits="HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Online Application for Reappointment</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+<link rel="shortcut icon" type="image/x-icon" href="images/fevicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container page">
+            <div id="heading" class="row" style="padding-bottom: 5px; background-color: #d44600;">
+                <div class="col-md-1 col-sm-2 col-xs-12">
+                    <div class="logoNHM">
+                        <img id="ctl00_UPLogo" title="Government of Uttar Pradesh, India" alt="UP Logo" src="images/uplogo.png" style="border-width: 0px;">
+                    </div>
+                </div>
+                <div class="col-md-11 col-sm-10 col-xs-12">
+                    <div class="Dep-title" style="margin-top: 0px;">
+                        <h1 style="color: white; font-size: 2.5em; line-height: 42px;">Online Application: Reappointment Portal for Doctors/ Specialists<br />
+                            Department of Health & Family Welfare, Uttar Pradesh</h1>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="container" style="background-color: white; border: 0px;">
+            <div class="row form-control-static text-right">
+                <div class="col-md-12" style="padding: 10px;">
+                  <%--  <span style="color: red; font-size: 15px;">* For any queries, contact Helpdesk at 1800-313-8566 </span>--%>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
